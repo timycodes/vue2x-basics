@@ -1,20 +1,24 @@
 <template>
 	<div id="app">
+		<NavigationMenu></NavigationMenu>
 		<div class="girl-container">
 			<img class="face" alt="artwork of female face" src="./assets/girl.jpg" />
 		</div>
 		<img class="vuelogo" alt="vue logo" src="./assets/logo.png" />
+
 		<MyProfile msg="Tim Conroy | Frontend Developer" />
 	</div>
 </template>
 
 <script>
 import MyProfile from './components/MyProfile';
+import NavigationMenu from './components/NavigationMenu';
 
 export default {
 	name: 'App',
 	components: {
 		MyProfile,
+		NavigationMenu,
 	},
 };
 </script>
