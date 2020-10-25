@@ -3,6 +3,7 @@
 		<div class="girl-container">
 			<img class="face" alt="artwork of female face" src="./assets/girl.jpg" />
 		</div>
+		<img class="vuelogo" alt="vue logo" src="./assets/logo.png" />
 		<HelloWorld msg="Tim Conroy | Frontend Developer" />
 	</div>
 </template>
