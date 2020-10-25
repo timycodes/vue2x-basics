@@ -3,7 +3,6 @@
 		<div class="girl-container">
 			<img class="face" alt="artwork of female face" src="./assets/girl.jpg" />
 		</div>
-
 		<HelloWorld msg="Tim Conroy | Frontend Developer" />
 	</div>
 </template>
@@ -40,9 +39,10 @@ export default {
 .face {
 	display: block;
 	width: 100%;
-	max-width: 360px;
-	height: auto;
+	max-width: 275px;
+	height: 380px;
 	margin: auto;
 	padding: 1.3rem;
+	border: 2px solid white;
 }
 </style>
