@@ -1,16 +1,27 @@
 <template>
-	<div>
-		<h2>Nav Bar</h2>
-		<nav>
-			<router-link to="/home">Home</router-link>
-		</nav>
-	</div>
+	<nav :style="{ background: '#333' }">
+		<ion-icon name="menu"></ion-icon>
+		<ul :stye="{ background: '#333' }">
+			<li></li>
+		</ul>
+	</nav>
 </template>
 
 <script>
 export default {
-	name: 'NavigationMenu.vue',
+	name: 'NavigationMenu',
+	props: ['navLinks', 'background'],
 };
 </script>
 
-<style></style>
+<style scoped lang="scss">
+nav {
+	height: 60px;
+	width: 100%;
+	color: white;
+}
+
+ion-icon {
+	font-size: 64px;
+}
+</style>

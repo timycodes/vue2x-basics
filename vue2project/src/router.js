@@ -1,10 +1,7 @@
-import Vue from 'vue';
-import Router from 'vue-router';
 import Home from './views/Home.vue';
+import About from './views/About.vue';
 
-Vue.use(Router);
-
-export default {
+export default new Router({
     mode: 'history',
     base: process.env.BASE_URL,
     routes: [{
@@ -15,7 +12,17 @@ export default {
         {
             path: '/about',
             name: 'about',
-            component: './views/About.vue',
+            component: About,
+        },
+        {
+            path: '/contact',
+            name: 'contact',
+            component: Contact,
+        },
+        {
+            path: '/profile',
+            name: 'profile',
+            component: MyProfile,
         },
     ],
-};
+});

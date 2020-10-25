@@ -1,23 +1,45 @@
 <template>
 	<div id="app">
-		<NavigationMenu></NavigationMenu>
+		<NavigationMenu :nav-links="navLinks"></NavigationMenu>
+
 		<div class="girl-container">
-			<img class="face" alt="artwork of female face" src="./assets/girl.jpg" />
+			<img class="face" alt="female face" src="./assets/girl.jpg" />
 		</div>
 		<img class="vuelogo" alt="vue logo" src="./assets/logo.png" />
 
-		<MyProfile msg="Tim Conroy | Frontend Developer" />
+		<Portfolio msg="Tim Conroy | Frontend Developer" />
 	</div>
 </template>
 
 <script>
-import MyProfile from './components/MyProfile';
-import NavigationMenu from './components/NavigationMenu';
+import Portfolio from '@/components/Portfolio';
+import NavigationMenu from '@/components/NavigationMenu';
 
 export default {
 	name: 'App',
+	data() {
+		return {
+			navLinks: [
+				{
+					text: 'About',
+					path: '/about',
+					icon: 'ion-ios-business',
+				},
+				{
+					text: 'Contact',
+					path: '/contact',
+					icon: 'ion-ios-megaphone',
+				},
+				{
+					text: 'Portfolio',
+					path: '/portfolio',
+					icon: 'ion-ios-briefcase',
+				},
+			],
+		};
+	},
 	components: {
-		MyProfile,
+		Portfolio,
 		NavigationMenu,
 	},
 };

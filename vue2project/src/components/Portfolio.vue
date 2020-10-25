@@ -6,7 +6,7 @@
 
 <script>
 export default {
-	name: 'MyProfile',
+	name: 'Portfolio',
 	props: {
 		msg: String,
 	},
