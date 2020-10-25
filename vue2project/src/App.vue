@@ -4,17 +4,17 @@
 			<img class="face" alt="artwork of female face" src="./assets/girl.jpg" />
 		</div>
 		<img class="vuelogo" alt="vue logo" src="./assets/logo.png" />
-		<HelloWorld msg="Tim Conroy | Frontend Developer" />
+		<MyProfile msg="Tim Conroy | Frontend Developer" />
 	</div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue';
+import MyProfile from './components/MyProfile';
 
 export default {
 	name: 'App',
 	components: {
-		HelloWorld,
+		MyProfile,
 	},
 };
 </script>
